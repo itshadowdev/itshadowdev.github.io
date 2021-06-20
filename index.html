@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="" />
+      <meta property="og:title" content="Shadow_Dev" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="https://i.imgur.com/zCHgjKZ.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="627" />
+      <meta name="theme-color" content="#26e8f4 98.75%">
+      
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      
+      <!-- site metas -->
+      <title>Shadow_Dev</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="Shadow_Dev">
+      
+      <!-- style css -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <!--<link rel="stylesheet" href="style.scss">-->
+      
+      <!-- fevicon -->
+      <link class="title" rel="icon" href="https://i.imgur.com/zCHgjKZ.jpg" type="image/gif" />
+      
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body onLoad="disableClick()">    
+ <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">home</button>
+        <button class="tablinks" onclick="openCity(event, 'Blog')">blog</button>
+        <button class="tablinks" onclick="openCity(event, 'Projects')">projects</button>
+      </div>
+      <!--href="https://github.com/ven" rel="noopener" target="_blank"-->
+<div class="home">
+      <div id="Home" class="tabcontent">
+        <h3>Shadow</h3>
+        <p>Semi-adult self taught <b>programmer</b> and a student.</p>
+        <h4><a class="git" href="https://github.com/itshadowdev" target="_blank"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a><a href="https://twitter.com/ShadowDev15" class="twit" target="_blank"><span class="iconify" data-icon="bx:bxl-twitter" data-inline="false"></span></a><a class="disc" target="_blank" href="https://discord.com/users/840466325280391169"><span class="iconify" data-icon="carbon:logo-discord" data-inline="false"></span></a></h4>
+      </div>
+</div>      
+<div class="blog">     
+      <div id="Blog" class="tabcontent">
+        <h3>Blog</h3>
+        <p><div class="empty"><span class="iconify" data-icon="el:bookmark-empty" data-inline="false"></span> &#128531; There is no blog to display.</p></div> 
+      </div>
+</div>      
+
+<div class="project">    
+  <div id="Projects" class="tabcontent">
+    <h3>Projects</h3>
+    <p><div class="empty"><span class="iconify" data-icon="el:bookmark-empty" data-inline="false"></span> &#128528; No projects cause I am lazy.</p></div> 
+  </div>
+</div>      
+
+
+<!-- __Script to run the tabs and so others__  -->        
+  <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

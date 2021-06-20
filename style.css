@@ -1,0 +1,157 @@
+/*font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+*{
+  text-decoration: none;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, rgb(239, 50, 217), rgb(137, 255, 253));
+
+}
+
+.title{
+  border-radius: 50%;
+}
+
+/* Style the tab */
+.tab {
+  margin-left: 15%;
+  overflow: hidden;
+  padding-top: 5%;
+  padding-left: 2rem;
+  text-align: center;
+  align-items: center;
+  /*border: 1px solid #ccc;*/
+  background-color: inherit;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: skyblue;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: white;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  /*padding: 6px 12px;*/
+  -webkit-animation: fadeEffect 3s;
+  animation: fadeEffect 3s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.home{
+    padding-left: 19.45%;
+}
+.home h3{
+    color: white;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    margin-top: 8%;
+    padding-bottom: none;
+    margin-bottom: none;
+    font-weight: 700;
+}
+.home p{
+    color: white;
+    margin: 0;
+    padding-top: 0;
+    height: 100%;
+    max-width: 24rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 transparent;
+    --tw-ring-shadow: 0 0 transparent;
+}
+.git{
+  color: black;
+  font-size: 20px;
+}
+.git:hover{
+  color: rgb(49, 48, 48);
+}
+.twit{
+  font-size: 22px;
+  text-decoration: none;
+  padding-left: 20px;
+  color: black;
+}
+.twit:hover{
+  color: #1DA1F2;
+}
+.disc{
+  padding-left: 19px;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+.disc:hover{
+  color:  #7289da;
+}
+.blog{
+  padding-left: 19.45%;
+}
+.blog h3{
+  color: white;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  margin-top: 8%;
+  padding-bottom: none;
+  margin-bottom: none;
+  font-weight: 700;
+}
+.empty{
+  color: black;
+}
+.project{
+  padding-left: 19.45%;
+}
+.project h3{
+  color: white;
+  line-height: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  margin-top: 8%;
+  padding-bottom: none;
+  margin-bottom: none;
+  font-weight: 700;
+}
